@@ -1,1 +1,2 @@
 # JavaScriptStudy
+# JavaScript-Studies
