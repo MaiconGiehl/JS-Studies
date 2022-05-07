@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Deus é top</p>
+    <p>Deus é top</p>
+    <p>Deus é top</p>
+    <p>Deus é top</p>
+
+    <script>
+
+        const arr1 = new Array(3)
+        console.log("a", arr1)
+
+        const arr3 = Array.of(3)
+        console.log("B", arr3)
+
+
+        const arr2 = Array.from(arr1)
+        arr2.push(4, 5)
+        console.log("c", arr2)
+
+        let paragrafos = document.querySelectorAll('p')
+        console.log("p: ", paragrafos)
+        // paragrafos.forEach( function(p, i){
+        //     p.textContent = `${++i} -${p.textContent}`
+        // })
+
+        paragrafos = Array.from(paragrafos)
+
+        paragrafos.map( function(p, i){
+            p.textContent = `${++i} - ${p.textContent}`
+        })
+
+
+    </script>
+</body>
+</html>
